@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Righteous&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/9564e61af5.js" crossorigin="anonymous"></script>
+    <title>Córdoba</title>
+</head>
+<body>
+    <header>
+        <!--navbar-->
+        <nav class="navbar">
+            <div class="agency">
+                <a href="index.html"><img  class="logo-img" src="img/logo2.png" alt="logo"></a>
+            </div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="destinos.html">DESTINOS</a></li>
+                    <li><a href="actividades.html">ACTIVIDADES</a></li>
+                    <li><a href="#contact-us">CONTACTO</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--end navbar-->
+    </header>
+    <main>
+        <section class="destinos-section">
+            <div class="destinos-intro">
+                <img src="img/destinos/12.jpg" alt="img4" class="imgsActividades"><!--cargar una imagen ilustrativa linda-->
+            </div>
+            <div class="destinos-text"><!--poner la imagen de amo cordoba-->
+                <p id="p-destino">Una pequeña reseña de está hermosa provincia de la República Argentina que te podriamos dar: <br>
+                     Está ubicada en medio de las praderas de las pampas y las laderas de Sierras de Córdoba. Su 
+                    animada capital,
+                    <br> que lleva el mismo nombre, es conocida por una catedral decorada y la Manzana Jesuítica, un complejo jesuita <br>
+                     del siglo XVII aún activo que rodea el campus original de la primera universidad de Argentina.
+                    <br> En toda Córdoba, las haciendas coloniales, 
+                    como la Estancia de Jesús María, constituyen  ejemplos de cómo los jesuitas <br>ayudaron a moldear la región.
+                <br> En cuanto a su clima, disfruta de un clima subtropical húmedo con estación seca. Siendo más especificos, en los <br>
+                 veranos son húmedos, 
+                con días calurosos y noches templadas. <br> En cuanto al Invierno, el mes más frío es Julio, y las 
+                nevadas suelen ser frecuentes en la zona de Altas Cumbres.
+                <br> A principios de Otoño las noches 
+                empiezan a refrescar, pero durante el dia el clima es caluroso.
+                Las primaveras se <br> 
+                caraterizan por ser variables y muy ventosas </p>
+                <div class="a-destino">
+                    <a class="a-destino" href="destinos.html" target="_blank">Ver más</a><!--link a destinos-->
+                </div>
+            </div>
+        </section>
+        <hr><!--linea horizontal-->
+        <!--seasons--><!--link a actividades-->
+        <section id="act-section">
+            <div class="act-head">
+                <span>Te queremos ofrecer!!! </span>
+                <p>distintas Actividades que te agrupamos deacuerdo a las distintas temporadas</p>
+            </div>
+            <div class="act-container">
+                <div class="act-box">
+                    <!-- lo comento porq no le voy a poner imagen a la caja
+                    <div class="act-box-img">
+                        <img src="img/actividades/hiking.png" alt="">
+                    </div>
+                    -->
+                    <div class="act-box-texto">
+                        <h3 class="act-box-title"><a href="actividades.html" target="_blank">Verano</a></h3>
+                    </div>
+                </div>
+                <div class="act-box">
+                    <!-- lo comento porq no le voy a poner imagen a la caja
+                    <div class="act-box-img">
+                        <img src="img/actividades/templos3.png" alt="otono">
+                    </div>
+                    -->
+                    <div class="act-box-texto">
+                        <h3 class="act-box-title"><a href="actividades.html" target="_blank">Otoño</a></h3>
+                    </div>
+                </div>
+                <div class="act-box">
+                    <!-- lo comento porq no le voy a poner imagen a la caja
+                    <div class="act-box-img">
+                        <img src="img/actividades/historical3.png" alt="invierno">
+                    </div>
+                    -->
+                    <div class="act-box-texto">
+                        <h3 class="act-box-title"><a href="actividades.html" target="_blank">Invierno</a></h3>
+                    </div>
+                </div>
+                <div class="act-box">
+                    <!--lo comento porq no le voy a poner imagen a la caja
+                    <div class="act-box-img">
+                        <img src="img/actividades/beer1.png" alt="primavera">
+                    </div>
+                    -->
+                    <div class="act-box-texto">
+                        <h3 class="act-box-title"><a href="actividades.html" target="_blank">Primavera</a></h3>
+                    </div>
+                </div>
+            </div>
+        </section><!--fin de link a actividades-->
+
+        <hr><!--linea horizontal-->
+        <!--contact form & info-->
+        <section id="contact-us">
+            <div class="container">
+                <div class="contact-titles">
+                    <h3>Envianos tus consultas y/o sugerencias.</h3>
+                </div>
+
+            <!--contact form-->
+                <div class="contact-form">
+                    <form action="">
+                        <div class="required-input">
+                            <label for="name"></label>
+                            <input type="text" name="name" placeholder="Nombre" id="name" onkeyup="validateName()">
+                            <span id="invalidName"></span>
+                        </div>
+
+                        <div class="required-input">
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="E-mail" id="email" onkeyup="validateEmail()">
+                            <span id="invalidEmail"></span>
+                        </div>
+
+                        <p>Selecciona el motivo de tu consulta:</p>
+                        <select name="motivo" id="motivo">
+                            <option value="destinos">Destinos</option>
+                            <option value="alojamientos">Alojamientos</option>
+                            <option value="actividades">Actividades</option>
+                            <option value="otras">Otras consultas y/o sugerencias</option>
+                        </select>
+                        <br><br>
+                        <textarea name="consulta" id="consulta" cols="40" rows="10" maxlength="300" placeholder="Dejanos tu consulta..."></textarea>
+                        <br>
+                        <input type="submit" value="enviar" id="btn" onclick="return validateForm()"> 
+                        <span id="submitErr"></span>   
+                    </form>
+                </div>
+            <!--end contact form-->
+            </div>
+        </section>   
+
+        <section id="info">
+            <div class="wrap-info">
+            <!--contact info-->
+                <div class="contact-info">
+                    <ul>
+                        <li>
+                            <i class="fa fa-house"></i>
+                            <p>Cordoba, Argentina</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <p>consultas@cordobaturismo.com.ar</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <p>555-5555</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54481.16512150623!2d-64.57149519779553!3d-31.412119706716794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6640d6777c71%3A0x75c24ab6cb121bed!2sVilla%20Carlos%20Paz%2C%20Cordoba!5e0!3m2!1sen!2sar!4v1664983733783!5m2!1sen!2sar" width="300" height="200" style="border:2px solid rgb(70, 70, 92);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <span id="temperatura">0</span>
+                <!--end contact info-->
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <!--copyright-->
+      <div class="copyright-box">
+        <p>© 2023 Trabajo Practico </p>
+      </div>
+      <!--social networks-->
+      <div class="social-box">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div> 
+    </footer>
+<script src="js/validation-form.js"></script><!--generar el enlace a la carpeta del scrip-->
+<script src="js/script.js"></script>
+</body>
+</html>
